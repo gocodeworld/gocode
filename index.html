@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GoCode — разработка сайтов под ключ</title>
+    <meta
+      name="description"
+      content="Кооператив GoCode — разработка эффективных сайтов под ключ: лендинги, визитки и веб‑проекты, которые решают задачи бизнеса."
+    />
+    <meta
+      name="keywords"
+      content="разработка сайтов под ключ, создание сайтов, веб-разработка, лендинг, корпоративный сайт, кооператив разработчиков, GoCode"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="author" content="Кооператив разработчиков GoCode" />
+    <meta name="theme-color" content="#05070a" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GoCode" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:title" content="GoCode — разработка сайтов под ключ" />
+    <meta
+      property="og:description"
+      content="Кооператив GoCode — разработка эффективных сайтов под ключ: лендинги, визитки и веб‑проекты, которые решают задачи бизнеса."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GoCode — разработка сайтов под ключ" />
+    <meta
+      name="twitter:description"
+      content="Кооператив GoCode — разработка эффективных сайтов под ключ: лендинги, визитки и веб‑проекты для бизнеса."
+    />
+    <link rel="icon" href="assets/gocode-logo.png" type="image/png" sizes="any" />
+    <link rel="apple-touch-icon" href="assets/gocode-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (function () {
+        var link = document.createElement("link");
+        link.rel = "canonical";
+        link.href = window.location.href.split("#")[0];
+        document.head.appendChild(link);
+        var ogUrl = document.createElement("meta");
+        ogUrl.setAttribute("property", "og:url");
+        ogUrl.content = link.href;
+        document.head.appendChild(ogUrl);
+      })();
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "#organization",
+            "name": "Кооператив разработчиков GoCode",
+            "alternateName": "GoCode",
+            "description": "Кооператив GoCode объединяет разработчиков с опытом создания веб-проектов: сайты под ключ, лендинги и визитки для бизнеса.",
+            "email": "gocodevl@gmail.com",
+            "knowsAbout": [
+              "Веб-разработка",
+              "Разработка сайтов под ключ",
+              "Лендинги",
+              "UI/UX дизайн"
+            ],
+            "areaServed": {
+              "@type": "Country",
+              "name": "Россия"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "#website",
+            "name": "GoCode",
+            "description": "Разработка сайтов под ключ — кооператив GoCode.",
+            "inLanguage": "ru-RU",
+            "publisher": { "@id": "#organization" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "#webpage",
+            "name": "Разработка сайтов под ключ — GoCode",
+            "description": "Кооператив GoCode — разработка эффективных сайтов под ключ: лендинги, визитки и веб-проекты для бизнеса.",
+            "isPartOf": { "@id": "#website" },
+            "about": { "@id": "#organization" }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div class="bg-layer" id="bg-layer">
+      <div class="bg-gradient" aria-hidden="true"></div>
+      <canvas id="scene3d" aria-hidden="true"></canvas>
+    </div>
+    <div class="page">
+      <header class="header" id="site-header">
+        <div class="container header__inner">
+          <a href="#top" class="logo" aria-label="GoCode — на главную">
+            <img
+              src="assets/gocode-logo.png"
+              alt=""
+              width="180"
+              height="48"
+              class="logo__image"
+              decoding="async"
+            />
+          </a>
+          <button
+            type="button"
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Открыть меню"
+          >
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+          </button>
+          <nav class="nav" id="site-nav" aria-label="Основная навигация">
+            <a href="#about" class="nav__link">О кооперативе</a>
+            <a href="#process" class="nav__link">Как работаем</a>
+            <a href="#example" class="nav__link">Этот сайт</a>
+            <a href="#contact" class="nav__link nav__link--mobile-cta button button--primary button--small"
+              >Обсудить проект</a
+            >
+          </nav>
+          <a href="#contact" class="header__cta button button--primary">Обсудить проект</a>
+        </div>
+      </header>
+
+      <main id="top" aria-label="Основное содержание">
+        <section class="hero">
+          <div class="container hero__inner">
+            <div class="hero__content">
+              <p class="hero__eyebrow">Кооператив разработчиков GoCode</p>
+              <h1 class="hero__title hero__title--load">Разработка сайтов под ключ</h1>
+              <div class="hero__actions">
+                <a href="#contact" class="button button--primary button--hero-cta"
+                  >Оставить заявку</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--intro" id="intro">
+          <div class="container section__inner section__inner--narrow">
+            <p class="intro__lead">
+              Первый контакт с вашим бизнесом происходит в интернете. Если у
+              компании нет сайта, клиенты идут к тем, у кого он есть.
+            </p>
+            <p class="intro__text">
+              Сайт решает задачу продаж в любое время суток, формирует
+              доверие к бренду и работает на статус компании без выходных и
+              перерывов. Это не просто страница в сети, а полноценный актив,
+              который приносит прибыль.
+            </p>
+            <div class="intro-card">
+              <h2 class="intro-card__title">Сайт как бизнес‑инструмент</h2>
+              <ul class="intro-card__list">
+                <li>Формирует доверие и статус</li>
+                <li>Продаёт 24/7 без выходных</li>
+                <li>Работает как самостоятельный актив</li>
+              </ul>
+              <p class="intro-card__hint">
+                Так мы подходим к каждому проекту: от первого брифинга до
+                запуска и поддержки.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--services" id="about">
+          <div class="container section__inner">
+            <div class="section__header">
+              <h2 class="section__title">Кооператив GoCode</h2>
+              <p class="section__subtitle">
+                Команда разработчиков с богатым опытом создания веб‑проектов.
+              </p>
+            </div>
+            <div class="grid grid--two">
+              <div class="card services-card">
+                <p class="card__text">
+                  Кооператив GoCode объединяет разработчиков с богатым опытом
+                  создания веб‑проектов. Мы проектируем и запускаем сайты,
+                  лендинги и визитки, которые решают задачи бизнеса, а не
+                  просто красиво выглядят в портфолио.
+                </p>
+                <p class="card__text">
+                  Шаблонные решения и конструкторы не рассматриваем — только
+                  индивидуальная работа под конкретную аудиторию и цели
+                  заказчика.
+                </p>
+              </div>
+              <div class="card card--accent services-card">
+                <h3 class="card__title card__title--accent">Чем мы отличаемся</h3>
+                <ul class="list">
+                  <li class="list__item">Фокус на бизнес‑результатах</li>
+                  <li class="list__item">Индивидуальный дизайн и архитектура</li>
+                  <li class="list__item">
+                    Чёткие сроки и прозрачный процесс разработки
+                  </li>
+                  <li class="list__item">
+                    Работаем в формате партнёрства, а не «сделать страницу»
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--process" id="process">
+          <div class="container section__inner">
+            <div class="section__header">
+              <h2 class="section__title">Полный цикл разработки</h2>
+              <p class="section__subtitle">
+                От первого разговора до запуска рабочей версии сайта.
+              </p>
+            </div>
+            <div class="steps">
+              <article class="step">
+                <div class="step__index">01</div>
+                <div class="step__body">
+                  <h3 class="step__title">Брифинг и аналитика</h3>
+                  <p class="step__text">
+                    Каждый проект проходит через полноценный цикл разработки:
+                    от брифинга и прототипирования до верстки и программной
+                    реализации. На старте мы погружаемся в продукт, аудиторию и
+                    конкурентную среду.
+                  </p>
+                </div>
+              </article>
+              <article class="step">
+                <div class="step__index">02</div>
+                <div class="step__body">
+                  <h3 class="step__title">Прототип и структура</h3>
+                  <p class="step__text">
+                    Прорабатываем информационную архитектуру, продумываем пути
+                    пользователя и точки контакта с продуктом. Фиксируем
+                    структуру и ключевые блоки, которые будут работать на
+                    конверсию.
+                  </p>
+                </div>
+              </article>
+              <article class="step">
+                <div class="step__index">03</div>
+                <div class="step__body">
+                  <h3 class="step__title">Дизайн, верстка, разработка</h3>
+                  <p class="step__text">
+                    Создаём визуальный стиль, сверстанный интерфейс и программную
+                    часть. На всех этапах мы обсуждаем детали с заказчиком,
+                    чтобы исключить недопонимание и получить предсказуемый
+                    результат.
+                  </p>
+                </div>
+              </article>
+              <article class="step">
+                <div class="step__index">04</div>
+                <div class="step__body">
+                  <h3 class="step__title">Запуск и поддержка</h3>
+                  <p class="step__text">
+                    Вы знаете, за что платите, и получаете ровно то, что было
+                    согласовано. Помогаем с размещением, технической
+                    настройкой, при необходимости сопровождаем и развиваем
+                    проект после запуска.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="example">
+          <div class="container section__inner section__inner--narrow">
+            <div class="section__header section__header--center">
+              <h2 class="section__title">Этот сайт как пример</h2>
+              <p class="section__subtitle section__subtitle--muted">
+                Так мы видим качественную веб‑разработку для бизнеса.
+              </p>
+            </div>
+            <div class="card card--large">
+              <p class="card__text">
+                Этот сайт — пример того, как мы видим качественную
+                веб‑разработку. Чистая архитектура, продуманная структура,
+                отсутствие визуального шума.
+              </p>
+              <p class="card__text">
+                Так может выглядеть ваш проект, если доверить его команде,
+                которая умеет делать продукт под ключ без срывов сроков и
+                потери качества.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="contact">
+          <div class="container section__inner section__inner--split">
+            <div class="contact-intro">
+              <h2 class="section__title">Обсудим ваш проект?</h2>
+              <p class="section__subtitle section__subtitle--muted">
+                Расскажите, какой сайт нужен бизнесу, — мы предложим решение,
+                формат сотрудничества и ориентиры по срокам.
+              </p>
+            </div>
+            <div class="contact">
+              <p class="contact__text">
+                Оставьте удобный способ связи — и мы вернёмся с предложением по
+                вашему проекту. Или напишите напрямую:
+                <a href="mailto:gocodevl@gmail.com" class="contact__email">gocodevl@gmail.com</a>
+              </p>
+              <form
+                class="contact__form"
+                action="https://formsubmit.co/gocodevl@gmail.com"
+                method="post"
+              >
+                <input type="hidden" name="_captcha" value="false" />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://gocodeworld.github.io/gocode/"
+                />
+                <label class="field">
+                  <span class="field__label">Имя</span>
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    autocomplete="name"
+                    placeholder="Как к вам обращаться"
+                    class="field__input"
+                  />
+                </label>
+                <label class="field">
+                  <span class="field__label">Email</span>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    placeholder="Ваш email"
+                    class="field__input"
+                  />
+                </label>
+                <label class="field">
+                  <span class="field__label">Кратко о задаче</span>
+                  <textarea
+                    name="message"
+                    rows="3"
+                    required
+                    placeholder="Расскажите, какой сайт нужен и для чего"
+                    class="field__input field__input--textarea"
+                  ></textarea>
+                </label>
+                <button type="submit" class="button button--primary button--full">
+                  Отправить заявку
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <span class="footer__brand">GoCode</span>
+          <span class="footer__text">Разработка сайтов под ключ</span>
+          <a href="mailto:gocodevl@gmail.com" class="footer__email">gocodevl@gmail.com</a>
+          <span class="footer__text footer__text--muted">
+            © <span id="year"></span> Кооператив разработчиков GoCode
+          </span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="vendor/three.min.js"></script>
+    <script src="scene.js"></script>
+    <script>
+      (function () {
+        var header = document.getElementById("site-header");
+        var toggle = document.getElementById("nav-toggle");
+        var nav = document.getElementById("site-nav");
+        if (toggle && nav && header) {
+          function setOpen(open) {
+            header.classList.toggle("header--open", open);
+            toggle.setAttribute("aria-expanded", open ? "true" : "false");
+            toggle.setAttribute(
+              "aria-label",
+              open ? "Закрыть меню" : "Открыть меню"
+            );
+            document.body.classList.toggle("nav-open", open);
+          }
+          toggle.addEventListener("click", function () {
+            setOpen(!header.classList.contains("header--open"));
+          });
+          nav.querySelectorAll("a").forEach(function (a) {
+            a.addEventListener("click", function () {
+              setOpen(false);
+            });
+          });
+          window.addEventListener("resize", function () {
+            if (window.matchMedia("(min-width: 881px)").matches) setOpen(false);
+          });
+        }
+      })();
+      var y = document.getElementById("year");
+      if (y) y.textContent = String(new Date().getFullYear());
+
+      (function () {
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animate-on-scroll");
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: "0px 0px -24px 0px" }
+        );
+        var about = document.getElementById("about");
+        var process = document.querySelector(".section--process");
+        if (about) observer.observe(about);
+        if (process) observer.observe(process);
+      })();
+    </script>
+  </body>
+</html>
